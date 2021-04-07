@@ -12,7 +12,7 @@ function bolota ( x, y ) {
 var redonda = bolota ( 12, 8 ) + 5;
 
 // Qual o valor atualizado dessa variável?
-redonda;
+25;
 
 // Declare uma nova variável, sem valor.
 var quadrada;
@@ -24,14 +24,14 @@ Onde VALOR é o novo valor da variável.
 */
 function cubo () {
     quadrada = 20
-    return "O valor da variável agora é 20"
+    return "O valor da variável agora é" + quadrada
 }
 
 // Invoque a função criada acima.
-cubo
+cubo ()
 
 // Qual o retorno da função? (Use comentários de bloco).
-/* Eu espero que a função tenha retornado o valor 20*/
+/* O valor da variável agora é 20*/
 
 /*
 Crie uma função com as seguintes características:
@@ -41,15 +41,18 @@ Crie uma função com as seguintes características:
 3. O retorno da função deve ser a multiplicação dos 3 argumentos, somando `2` ao resultado da multiplicação.
 */
 function complicada ( x, y, z ) {
-    if x = 
-    return 
+    if (x === undefined || y === undefined || z === undefined);
+    return "Preencha todos os valores corretamente!";
+    }
+
+    return (x * y * z) + 2;
 }
 
 // Invoque a função criada acima, passando só dois números como argumento.
-?
+complicada ( 12, 2)
 
 // Qual o resultado da invocação acima? (Use comentários para mostrar o valor retornado).
-?
+// Preencha todos os valores corretamente!
 
 // Agora invoque novamente a função criada acima, mas passando todos os três argumentos necessários.
 ?
