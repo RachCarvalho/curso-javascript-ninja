@@ -38,7 +38,7 @@ valor dessa propriedade a quantidade passada por parâmetro;
 booleano que representa "verdadeiro";
 */
 pessoa.andar = function ( x ) {
-    pessoa.caminhouQuantosMetros + x;
+    pessoa.caminhouQuantosMetros += x;
     if ( x !== undefined ) {
         pessoa.andando = true;
     }
@@ -152,7 +152,7 @@ pessoa.andando //false
 Quantos metros a pessoa andou? (Use uma instrução para responder e comentários
 inline ao lado da instrução para mostrar a resposta retornada)
 */
-?
+pessoa.caminhouQuantosMetros //10
 
 /*
 Agora vamos deixar a brincadeira um pouco mais divertida! :D
@@ -171,8 +171,24 @@ deve conter no retorno da frase acima é "metro" no lugar de "metros".
 método), que será concatenada com a frase de retorno, mostrando a resposta
 correta, de acordo com os dados inseridos no objeto.
 */
-?
+pessoa.apresentacao = function () {
+    var adjetivo = "a ";
+    var ano = " ano,";
+    var metro = " metro!";
+    if (pessoa.sexo = "feminino") { 
+        return "Olá, eu sou " + adjetivo + pessoa.nome + " " + pessoa.sobrenome + ", tenho " + pessoa.idade + " anos, " + pessoa.altura + ", meu peso é " + pessoa.peso + " e, só hoje, eu já caminhei " + pessoa.caminhouQuantosMetros + " metros!"
+    }
+    else if (pessoa.idade = 1) {
+        return "Olá, eu sou " + adjetivo + pessoa.nome + " " + pessoa.sobrenome + ", tenho " + pessoa.idade + pessoa.ano + pessoa.altura + ", meu peso é " + pessoa.peso + " e, só hoje, eu já caminhei " + pessoa.caminhouQuantosMetros + " metros!"
+    }
+    else if (pessoa.caminhoQuantosMetros = 1) {
+        return "Olá, eu sou " + adjetivo + pessoa.nome + " " + pessoa.sobrenome + ", tenho " + pessoa.idade + pessoa.ano + pessoa.altura + ", meu peso é " + pessoa.peso + " e, só hoje, eu já caminhei " + pessoa.caminhouQuantosMetros + metro
+    }
+    else {
+        return "Olá, eu sou o " + pessoa.nome + " " + pessoa.sobrenome + ", tenho " + pessoa.idade + " anos, " + pessoa.altura + ", meu peso é " + pessoa.peso + " e, só hoje, eu já caminhei " + pessoa.caminhouQuantosMetros + " metros!"
+    }
+}
 
 // Agora, apresente-se ;)
-?
+pessoa.apresentacao () //"Olá, eu sou a Rachel Carvalho, tenho 40 anos, 1.64, meu peso é 87 e, só hoje, eu já caminhei 10 metros!"
 ```
